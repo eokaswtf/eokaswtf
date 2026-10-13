@@ -65,7 +65,7 @@ svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="660" height="285" viewB
 <rect x="4" y="4" width="652" height="277" rx="32" fill="#fff7ff"/>
 <text x="38" y="48" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#bb55bb">eokaswtf's GitHub Stats</text>
 {''.join(rows)}
-<text x="38" y="263" font-family="Arial, sans-serif" font-size="12" fill="#9d8a9f">Public + private · Last 365 days · Updated {end:%Y-%m-%d}</text>
+<text x="38" y="263" font-family="Arial, sans-serif" font-size="12" fill="#9d8a9f">{os.getenv("GITHUB_STATS_VISIBILITY", "Public only")} · Last 365 days · Updated {end:%Y-%m-%d}</text>
 </svg>
 """
 output = Path("profile/stats.svg")
