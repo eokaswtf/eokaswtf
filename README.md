@@ -2,7 +2,7 @@
 
 # Hello 👋, I'm eokaswtf
 
-<img src="./skills.svg" width="100%" alt="Skills and programs" />
+<img src="https://raw.githubusercontent.com/eokaswtf/eokaswtf/refs/heads/main/skills.svg" width="100%" alt="Skills and programs" />
 
 <br />
 
