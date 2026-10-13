@@ -17,6 +17,7 @@ jobs:
         env:
           GITHUB_STATS_TOKEN: ${{ secrets.GITHUB_STATS_PAT || secrets.GITHUB_TOKEN }}
           GITHUB_USER: eokaswtf
+          GITHUB_STATS_VISIBILITY: ${{ secrets.GITHUB_STATS_PAT && 'Public + private' || 'Public only' }}
         run: python .github/scripts/generate_stats.py
       - name: Commit updated card
         run: |
